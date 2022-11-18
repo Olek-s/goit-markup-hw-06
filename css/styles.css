@@ -772,11 +772,13 @@ p {
   outline: none;
 }
 
+.form-input:hover,
 .form-input:focus {
   border-color: var(--color-blue);
 }
 
-.form-input:focus .close-icon {
+.form-input:hover + .close-icon,
+.form-input:focus + .close-icon {
   fill: var(--color-blue);
 }
 
@@ -797,8 +799,8 @@ p {
   color: var(--color-primary-white);
 }
 
-.checkbox-wrap:hover .close-icon,
-.checkbox-wrap:focus .close-icon {
+.checkbox-input:hover + .close-icon,
+.checkbox-wrap:focus + .close-icon {
   fill: var(--color-blue);
   background-color: var(--color-blue);
 }
@@ -820,6 +822,11 @@ p {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border-color: var(--color-blue);
 }
 
 .checkbox-input {
@@ -876,13 +883,13 @@ p {
   background-image: url('../images/Close-button.png');
   opacity: 0;
   content: '';
-}*/
+}
 
 .checkbox-input:checked + .checkbox-label::after {
 }
 .checkbox-label:checked + .checkbox-input {
   opacity: 1;
-}
+}*/
 
 /*Portfolio*/
 
