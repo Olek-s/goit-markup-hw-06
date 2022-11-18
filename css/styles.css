@@ -717,8 +717,6 @@ p {
 
 .modal-close-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -729,8 +727,11 @@ p {
   border-radius: 50%;
 }
 
-.close-icon {
+.close-iconform {
   position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*Form*/
@@ -798,6 +799,11 @@ p {
 
 .checkbox-wrap:hover .close-icon,
 .checkbox-wrap:focus .close-icon {
+  fill: var(--color-blue);
+  background-color: var(--color-blue);
+}
+
+.checkbox-input:checked + .close-icon {
   fill: var(--color-blue);
   background-color: var(--color-blue);
 }
@@ -873,6 +879,8 @@ p {
 }*/
 
 .checkbox-input:checked + .checkbox-label::after {
+}
+.checkbox-label:checked + .checkbox-input {
   opacity: 1;
 }
 
