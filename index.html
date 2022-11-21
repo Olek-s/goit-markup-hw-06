@@ -519,7 +519,14 @@
           </div>
           
           <div class="checkbox-wrap">
-              <div class="checkbox-custom-box">
+            <input
+              class="checkbox-input"
+              id="terms-checkbox"
+              type="checkbox"
+              name="terms-checkbox"
+              checked required
+              />
+            <div class="checkbox-custom-box">
                 <svg class="check-icon" width="11" height="8">
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </div>
@@ -527,13 +534,6 @@
                 >Погоджуюся з розсилкою та приймаю
                 <a href="#"><span class="agreement-link">Умови договору</span></a>
               </label>
-              <input
-              class="checkbox-input"
-              id="terms-checkbox"
-              type="checkbox"
-              name="terms-checkbox"
-              checked required
-              />
           </div>
           <button class="submit-button primery-button" type="submit">
             Відправити
